@@ -1,0 +1,242 @@
+:root{
+    /* Primary */
+    --light-red: hsl(0, 100%, 67%, 0.1);
+    --orangey-yellow: hsl(39, 100%, 56%, 0.1);
+    --green-teal: hsl(166, 100%, 37%, 0.1);
+    --cobalt-blue: hsl(234, 85%, 45%, 0.1);
+
+    /* Gradients */
+    /* background */
+    --light-slate-blue: hsl(252, 100%, 67%);
+    --light-royal-blue: hsl(241, 81%, 54%);
+    /* circle */
+    --violet-blue: hsl(256, 72%, 46%);
+    --persian-blue: hsla(241, 72%, 46%, 0);
+
+    /* Neutral */
+    --white: hsl(0, 0%, 100%);
+    --pale-blue: hsl(221, 100%, 96%);
+    --light-lavender: hsl(241, 100%, 89%);
+    --dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 1.8rem;
+    background-color: var(--pale-blue);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    background-color: var(--white);
+    display: flex;
+    max-width: 74rem;
+    border-radius: 2.5rem;
+    margin: 1rem;
+}
+
+section{
+    padding: 4rem;
+    flex: 50%;
+}
+
+.sec-1{
+    text-align: center;
+    background: rgb(120,87,255);
+    background: linear-gradient(180deg, rgba(120,87,255,1) 0%, rgba(46,43,233,1) 100%);
+    border-radius: 2.5rem;
+}
+
+.header-1{
+    color: var(--light-lavender);
+    font-weight: 500;
+    margin-bottom: 4rem;
+}
+
+.circle{
+    position: relative;
+    padding-bottom: 70%;
+    width: 70%;
+    height: 0;
+    border-radius: 50%;
+    background: rgb(78,33,202);
+    background: linear-gradient(180deg, rgba(78,33,202,1) 0%, rgba(36,33,202,1) 100%);
+    margin: auto;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.circle__inner {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .circle__wrapper {
+    display: table;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .circle__content {
+    display: table-cell;
+    padding: 1em;
+    vertical-align: middle;
+  }
+
+.big{
+    font-size: 7rem;
+    font-weight: 700;
+    color: var(--white);
+}
+
+.small{
+    font-size: 1.6rem;
+    color: var(--light-lavender);
+    opacity: 0.7;
+}
+
+.header-2{
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 2rem;
+}
+
+.description{
+    color: var(--light-lavender);
+    font-size: 1.8rem;
+    margin: 0 2rem 0 2rem;
+    font-weight: 400;
+    margin-bottom: 2.5rem;
+}
+
+.sec-2-header{
+    color: var(--dark-gray-blue);
+    font-weight: 500;
+    margin-bottom: 3rem;
+}
+
+.stats{
+    display: flex;
+    width: 100%;
+    padding: 2rem;
+    border-radius: 1.3rem;
+    margin-bottom: 1.7rem;
+}
+
+.stats div{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex: 50%;
+    opacity: 1;
+}
+
+.bold{
+    color: var(--dark-gray-blue);
+    font-weight: bold;
+    font-size: 1.7rem;
+}
+
+.light{
+    opacity: 0.5;
+}
+
+.reaction{
+    background-color: var(--light-red);
+    color: hsl(0, 100%, 67%);
+}
+
+.memory{
+    background-color: var(--orangey-yellow);
+    color: hsl(39, 100%, 56%);
+}
+
+.verbal{
+    background-color: var(--green-teal);
+    color: hsl(166, 100%, 37%);
+}
+
+.visual{
+    background-color: var(--cobalt-blue);
+    color: hsl(234, 85%, 45%);
+    margin-bottom: 4rem;
+}
+
+button{
+    width: 100%;
+    padding: 1.7rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--white);
+    background-color: var(--dark-gray-blue);
+    border: none;
+    border-radius: 5rem;
+    cursor: pointer;
+}
+
+button:hover{
+    background: rgb(120,87,255);
+    background: linear-gradient(180deg, rgba(120,87,255,1) 0%, rgba(46,43,233,1) 100%);
+}
+
+@media only screen and (max-width: 700px){
+    html{
+        font-size: 50%;
+    }
+}
+
+@media only screen and (max-width: 550px){
+    html{
+        font-size: 40%;
+    }
+}
+
+@media only screen and (max-width: 430px){
+    html{
+        font-size: 50%;
+    }
+    body{
+        background-color: var(--white);
+    }
+    main{
+        flex-direction: column;
+        margin: 0;
+        border-radius: 0;
+        height: 100vh;
+    }
+    body{
+        display: block;
+    }
+    .sec-1{
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+    .circle{
+        padding-bottom: 50%;
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 350px){
+    html{
+        font-size: 40%;
+    }
+}
